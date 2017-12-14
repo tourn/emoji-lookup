@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+    <head>
+    </head>
+    <body>
+    </body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Basic Page Needs
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>Emoji Lookup</title>
+    <meta name="description" content="Look up emoji codes">
+    <meta name="author" content="Daniel Latzer">
+
+    <!-- Mobile Specific Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONT
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+
+    <!-- Favicon
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body height="100%">
+
+<!-- Primary Page Layout
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<div class="container">
+    <div class="row">
+        <div class="one-half column" style="margin-top: 10%">
+            <h1>Emoji Lookup</h1>
+            <p>Tired of not knowing that the shorthand for 😶 is <code>:no_mouth:</code>? Look no further!</p>
+            <form>
+                <input id="emoji" type="text" placeholder="Enter shorthand or emoji here" class="u-full-width"/>
+            </form>
+            <ul id="output">
+                <li>loading</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<footer class="u-pull-right" style="padding-right: 1em; color:grey;">
+    Data from <a href="https://github.com/omnidan/node-emoji">node-emoji</a>
+</footer>
+
+<script src="emoji.js"></script>
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
