@@ -1,0 +1,173 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    font-family: 'Inconsolata', monospace;
+    margin: 0 0 100px;
+}
+
+.el-header {
+    display: flex;
+    justify-content: center;
+    height: 300px;
+}
+
+.el-header__title-wrapper {
+    width: 46vw;
+    display: flex;
+    align-items: center;
+}
+
+.el-header__title { 
+    font-size: 90px;
+	font: bold 5vw Consolas, Monaco, monospace;
+	border-right: .1em solid black;
+	width: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	-webkit-animation: typing 2s steps(21, end), blink-caret .5s step-end infinite alternate;
+}
+
+.swing::-webkit-input-placeholder {
+    text-indent: 0;
+    font-weight: bold;
+}
+
+.swing {
+    display: inline-block;
+    width: 100%;
+    height: 80px;
+    padding: 10px 0 10px 90px;
+    border: 0.5px solid #f7f0a8;
+    border-radius: 40px;
+    outline: 0;
+    text-indent: 60px;
+    transition: all .3s ease-in-out;
+    font-size: 25px;
+}
+
+.swing + label {
+    display: inline-block;
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    top: 0;
+    left: 15px;
+    padding: 10px 15px;
+    background:#FFFBCC;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    transform-origin: 2px 2px;
+    transform: rotate(0);
+    animation: swing-back .4s 1 ease-in-out;
+    font-size: 50px;
+    border-radius: 40px;
+}
+
+.swing:focus, .swing:active {
+    text-indent: 0;
+    padding-left: 30px;
+}
+
+.swing:active::-webkit-input-placeholder, .swing:focus::-webkit-input-placeholder  {
+    color: lightgrey;
+}
+
+.swing:focus + label, .swing:active + label {
+    animation: swing 1.4s 1 ease-in-out;
+    transform: rotate(82deg);
+}
+  
+.el-content__lookupform {
+    float: none;
+    margin: 0 auto;
+}
+
+#el-content__output-container {
+    margin-top: 20px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.el-content__list-entry {
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+    margin-bottom: 5px;
+}
+
+.el-content__list-ready-entry, .el-content__list-entry-noresult, .el-content__list-entry-error {
+    text-align: center;
+    font-size: 100px;
+    opacity: 0.1;
+    margin-top: 100px;
+}
+
+.el-footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    background: #FFEB3B;
+    padding: 10px;
+    height: 90px;
+    line-height: 30px;
+}
+
+.el-button {
+    border: none;
+    font-family: inherit;
+    font-size: 15px;
+    background: #FFF59D;
+    border-radius: 40px;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 700;
+    outline: none !important;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    box-shadow: 0 6px #FDD835;
+    -webkit-transition: none;
+    -moz-transition: none;
+}
+
+.el-button:focus, .el-button:active {
+    outline: 0;
+}
+
+@keyframes typing { from { width: 0; } }
+@keyframes blink-caret { 50% { border-color: transparent; } }
+
+@keyframes swing {
+    0% {
+      transform: rotate(0);
+    }
+    20% {
+      transform: rotate(116deg);
+    }
+    40% {
+      transform: rotate(60deg);
+    }
+    60% {
+      transform: rotate(98deg);
+    }
+    80% {
+      transform: rotate(76deg);
+    }
+    100% {
+      transform: rotate(82deg);
+    }
+}
+
+@keyframes swing-back {
+    0% {
+      transform: rotate(82deg);
+    }
+    100% {
+      transform: rotate(0);
+    }
+}
