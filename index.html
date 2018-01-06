@@ -1,11 +1,3 @@
-<!doctype html>
-<html>
-    <head>
-    </head>
-    <body>
-    </body>
-</html>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,44 +13,69 @@
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- FONT
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-
     <!-- CSS
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="assets/css/emoji-lookup.css">
+
+    <!-- JS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script src="assets/vendor/jquery/jquery-3.2.1.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.js"></script>
+    <script src="assets/vendor/clipboard/clipboard.min.js"></script>
 
     <!-- Favicon
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+    <!-- FAVICON & FONT
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
 
 </head>
-<body height="100%">
+<body>
 
 <!-- Primary Page Layout
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<div class="container">
+<header class="el-header">
+    <a href="https://github.com/tourn/emoji-lookup">
+        <img style="position: absolute; top: 0; left: 0; border: 0;"
+             src="https://camo.githubusercontent.com/567c3a48d796e2fc06ea80409cc9dd82bf714434/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f6461726b626c75655f3132313632312e706e67"
+             alt="Fork me on GitHub"
+             data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_darkblue_121621.png">
+    </a>
+    <div class="el-header__title-wrapper">
+        <div class="el-header__title">Emoji Lookup 😶</div>
+    </div>
+</header>
+
+<div class="container-fluid">
     <div class="row">
-        <div class="one-half column" style="margin-top: 10%">
-            <h1>Emoji Lookup</h1>
-            <p>Tired of not knowing that the shorthand for 😶 is <code>:no_mouth:</code>? Look no further!</p>
-            <form>
-                <input id="emoji" type="text" placeholder="Enter shorthand or emoji here" class="u-full-width"/>
-            </form>
-            <ul id="output">
-                <li>loading</li>
-            </ul>
+        <div class="el-content__lookupform col-xs-9 col-sm-6">
+            <input id="emoji" class="swing" type="text" placeholder="Enter shorthand..."/>
+            <label for="emoji">😂</label>
         </div>
     </div>
+    <div class="row">
+        <ul id="el-content__output-container" class="col-xs-12"></ul>
+    </div>
 </div>
-<footer class="u-pull-right" style="padding-right: 1em; color:grey;">
-    Data from <a href="https://github.com/omnidan/node-emoji">node-emoji</a>
+
+<footer class="el-footer">
+    <div class="container-fluid">
+        <p class="el-footer__love">Made with ❤️ in Switzerland</p>
+        <div class="el-footer__information">
+            Data from <a href="https://github.com/omnidan/node-emoji">node-emoji</a>
+        </div>
+    </div>
 </footer>
 
-<script src="emoji.js"></script>
 <!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<script src="assets/js/emoji.js"></script>
+
 </body>
 </html>
