@@ -130,13 +130,15 @@ body {
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
-    box-shadow: 0 6px #FDD835;
+    box-shadow: 0 8px #FDD835;
     -webkit-transition: none;
     -moz-transition: none;
 }
 
 .el-button:focus, .el-button:active {
-    outline: 0;
+    outline: 2px;
+    background: #00C853;
+    box-shadow: 0 6px #00E676;
 }
 
 @keyframes typing { from { width: 0; } }
