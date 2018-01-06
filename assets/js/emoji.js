@@ -9,7 +9,7 @@ const templateString = {
     return `<li class="el-content__list-ready-entry col-cs-12">🎉</li>`;
   },
   copyButton: (emojiName) => {
-    return `<button class="el-button btn" data-clipboard-text="` + emojiName + `">copy to clipboard</button>`;
+    return `<button class="el-button btn" data-clipboard-text=":` + emojiName + `:">copy to clipboard</button>`;
   },
   noResultBox: () => {
     return `<li class="el-content__list-entry-noresult">😭</br>No results</li>`
